@@ -88,7 +88,7 @@ def unmark(filename):
             else:
                 kk[i, j] = rec(kk[i, j], 0.073)
 
-    new_name = filename.lower().replace(".png", ".new.png")
+    new_name = filename.replace(".png", ".new.png")
 
     print ("NEW: ", new_name)
     im.save(new_name, "PNG")
